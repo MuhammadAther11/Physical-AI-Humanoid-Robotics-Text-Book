@@ -1,0 +1,7 @@
+# Ignore Node Modules and build directories for ESLint
+node_modules/
+build/
+dist/
+coverage/
+*.log
+.env*

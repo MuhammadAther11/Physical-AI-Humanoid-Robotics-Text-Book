@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Module 1 - ROS 2 Nervous System": {
+    "message": "Module 1 - ROS 2 Nervous System",
+    "description": "The label for category 'Module 1 - ROS 2 Nervous System' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 2 - The Digital Twin": {
+    "message": "Module 2 - The Digital Twin",
+    "description": "The label for category 'Module 2 - The Digital Twin' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 3 - The AI-Robot Brain (NVIDIA Isaac)": {
+    "message": "Module 3 - The AI-Robot Brain (NVIDIA Isaac)",
+    "description": "The label for category 'Module 3 - The AI-Robot Brain (NVIDIA Isaac)' in sidebar 'tutorialSidebar'"
+  }
+}
