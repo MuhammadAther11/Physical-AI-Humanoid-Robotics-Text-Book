@@ -1,5 +1,5 @@
 
-# Chapter 8: Isaac ROS: VSLAM and Perception Acceleration
+# Isaac ROS: VSLAM and Perception Acceleration
 
 
 **NVIDIA Isaac ROS** is a collection of hardware-accelerated packages for ROS 2, specifically designed to boost the performance of robotics applications. It leverages the power of NVIDIA GPUs to provide significant acceleration for computationally intensive tasks, particularly in the areas of perception and navigation, which are critical for autonomous robots, including humanoid platforms.
