@@ -5,7 +5,7 @@
   "source": "@site/docs/module-4-vla/vla-overview.md",
   "sourceDirName": "module-4-vla",
   "slug": "/module-4-vla/vla-overview",
-  "permalink": "/docs/module-4-vla/vla-overview",
+  "permalink": "/ar/docs/module-4-vla/vla-overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4-vla/vla-overview.md",
@@ -14,11 +14,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Chapter 9: \"Nav2: Path Planning for Humanoid Robots\"",
-    "permalink": "/docs/module-3-ai-robot-brain/nav2-humanoids"
+    "title": "Nav2: Path Planning for Humanoid Robots",
+    "permalink": "/ar/docs/module-3-ai-robot-brain/nav2-humanoids"
   },
   "next": {
     "title": "Chapter 11: Voice-to-Action with Whisper",
-    "permalink": "/docs/module-4-vla/voice-to-action"
+    "permalink": "/ar/docs/module-4-vla/voice-to-action"
   }
 }

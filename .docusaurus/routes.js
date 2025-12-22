@@ -3,202 +3,167 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    path: '/ar/blog',
+    component: ComponentCreator('/ar/blog', '517'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    path: '/ar/blog/archive',
+    component: ComponentCreator('/ar/blog/archive', '085'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    path: '/ar/blog/authors',
+    component: ComponentCreator('/ar/blog/authors', '572'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    path: '/ar/blog/authors/all-sebastien-lorber-articles',
+    component: ComponentCreator('/ar/blog/authors/all-sebastien-lorber-articles', '7b4'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    path: '/ar/blog/authors/yangshun',
+    component: ComponentCreator('/ar/blog/authors/yangshun', 'b8c'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    path: '/ar/blog/first-blog-post',
+    component: ComponentCreator('/ar/blog/first-blog-post', 'cd1'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    path: '/ar/blog/long-blog-post',
+    component: ComponentCreator('/ar/blog/long-blog-post', '192'),
     exact: true
   },
   {
-    path: '/blog',
-    component: ComponentCreator('/blog', 'b2f'),
+    path: '/ar/blog/mdx-blog-post',
+    component: ComponentCreator('/ar/blog/mdx-blog-post', '117'),
     exact: true
   },
   {
-    path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '182'),
+    path: '/ar/blog/tags',
+    component: ComponentCreator('/ar/blog/tags', '7ca'),
     exact: true
   },
   {
-    path: '/blog/authors',
-    component: ComponentCreator('/blog/authors', '0b7'),
+    path: '/ar/blog/tags/docusaurus',
+    component: ComponentCreator('/ar/blog/tags/docusaurus', 'fcd'),
     exact: true
   },
   {
-    path: '/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/blog/authors/all-sebastien-lorber-articles', '4a1'),
+    path: '/ar/blog/tags/facebook',
+    component: ComponentCreator('/ar/blog/tags/facebook', 'c8f'),
     exact: true
   },
   {
-    path: '/blog/authors/yangshun',
-    component: ComponentCreator('/blog/authors/yangshun', 'a68'),
+    path: '/ar/blog/tags/hello',
+    component: ComponentCreator('/ar/blog/tags/hello', 'b0b'),
     exact: true
   },
   {
-    path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '89a'),
+    path: '/ar/blog/tags/hola',
+    component: ComponentCreator('/ar/blog/tags/hola', '803'),
     exact: true
   },
   {
-    path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '9ad'),
+    path: '/ar/blog/welcome',
+    component: ComponentCreator('/ar/blog/welcome', 'c05'),
     exact: true
   },
   {
-    path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'e9f'),
+    path: '/ar/markdown-page',
+    component: ComponentCreator('/ar/markdown-page', 'a73'),
     exact: true
   },
   {
-    path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '287'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '704'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', '858'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', '299'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', '00d'),
-    exact: true
-  },
-  {
-    path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', 'd2b'),
-    exact: true
-  },
-  {
-    path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '3d7'),
-    exact: true
-  },
-  {
-    path: '/docs',
-    component: ComponentCreator('/docs', '782'),
+    path: '/ar/docs',
+    component: ComponentCreator('/ar/docs', '4ce'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', '5ba'),
+        path: '/ar/docs',
+        component: ComponentCreator('/ar/docs', 'fdd'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', 'cab'),
+            path: '/ar/docs',
+            component: ComponentCreator('/ar/docs', 'f73'),
             routes: [
               {
-                path: '/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf',
-                component: ComponentCreator('/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf', '31c'),
+                path: '/ar/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf',
+                component: ComponentCreator('/ar/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf', '065'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-1-ros2-nervous-system/python-agents-with-rclpy',
-                component: ComponentCreator('/docs/module-1-ros2-nervous-system/python-agents-with-rclpy', '2a0'),
+                path: '/ar/docs/module-1-ros2-nervous-system/python-agents-with-rclpy',
+                component: ComponentCreator('/ar/docs/module-1-ros2-nervous-system/python-agents-with-rclpy', 'c8c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-1-ros2-nervous-system/ros2-fundamentals',
-                component: ComponentCreator('/docs/module-1-ros2-nervous-system/ros2-fundamentals', '5b5'),
+                path: '/ar/docs/module-1-ros2-nervous-system/ros2-fundamentals',
+                component: ComponentCreator('/ar/docs/module-1-ros2-nervous-system/ros2-fundamentals', 'a55'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-2/digital-twins',
-                component: ComponentCreator('/docs/module-2/digital-twins', '3c3'),
+                path: '/ar/docs/module-2/digital-twins',
+                component: ComponentCreator('/ar/docs/module-2/digital-twins', 'aef'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-2/unity-visualization',
-                component: ComponentCreator('/docs/module-2/unity-visualization', '8b2'),
+                path: '/ar/docs/module-2/unity-visualization',
+                component: ComponentCreator('/ar/docs/module-2/unity-visualization', '279'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-3-ai-robot-brain/isaac-overview',
-                component: ComponentCreator('/docs/module-3-ai-robot-brain/isaac-overview', '4ba'),
+                path: '/ar/docs/module-3-ai-robot-brain/isaac-overview',
+                component: ComponentCreator('/ar/docs/module-3-ai-robot-brain/isaac-overview', 'e47'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-3-ai-robot-brain/isaac-ros',
-                component: ComponentCreator('/docs/module-3-ai-robot-brain/isaac-ros', '8b2'),
+                path: '/ar/docs/module-3-ai-robot-brain/isaac-ros',
+                component: ComponentCreator('/ar/docs/module-3-ai-robot-brain/isaac-ros', '836'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-3-ai-robot-brain/isaac-sim',
-                component: ComponentCreator('/docs/module-3-ai-robot-brain/isaac-sim', 'e1f'),
+                path: '/ar/docs/module-3-ai-robot-brain/isaac-sim',
+                component: ComponentCreator('/ar/docs/module-3-ai-robot-brain/isaac-sim', '538'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-3-ai-robot-brain/nav2-humanoids',
-                component: ComponentCreator('/docs/module-3-ai-robot-brain/nav2-humanoids', 'a1f'),
+                path: '/ar/docs/module-3-ai-robot-brain/nav2-humanoids',
+                component: ComponentCreator('/ar/docs/module-3-ai-robot-brain/nav2-humanoids', 'b28'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-4-vla/autonomous-pipeline',
-                component: ComponentCreator('/docs/module-4-vla/autonomous-pipeline', '22e'),
+                path: '/ar/docs/module-4-vla/autonomous-pipeline',
+                component: ComponentCreator('/ar/docs/module-4-vla/autonomous-pipeline', '844'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-4-vla/llm-task-planning',
-                component: ComponentCreator('/docs/module-4-vla/llm-task-planning', '8be'),
+                path: '/ar/docs/module-4-vla/llm-task-planning',
+                component: ComponentCreator('/ar/docs/module-4-vla/llm-task-planning', '7ad'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-4-vla/vla-overview',
-                component: ComponentCreator('/docs/module-4-vla/vla-overview', 'cb9'),
+                path: '/ar/docs/module-4-vla/vla-overview',
+                component: ComponentCreator('/ar/docs/module-4-vla/vla-overview', '909'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/module-4-vla/voice-to-action',
-                component: ComponentCreator('/docs/module-4-vla/voice-to-action', 'e0a'),
+                path: '/ar/docs/module-4-vla/voice-to-action',
+                component: ComponentCreator('/ar/docs/module-4-vla/voice-to-action', 'd40'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -209,8 +174,8 @@ export default [
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', 'e5f'),
+    path: '/ar/',
+    component: ComponentCreator('/ar/', 'cb7'),
     exact: true
   },
   {
