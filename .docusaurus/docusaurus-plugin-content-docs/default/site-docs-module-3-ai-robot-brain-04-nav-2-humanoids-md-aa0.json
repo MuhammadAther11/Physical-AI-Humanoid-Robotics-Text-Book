@@ -1,0 +1,25 @@
+{
+  "id": "module-3-ai-robot-brain/nav2-humanoids",
+  "title": "Chapter 9: \"Nav2: Path Planning for Humanoid Robots\"",
+  "description": "Nav2 (Navigation2) is the ROS 2-native navigation stack, providing a complete framework for autonomous mobile robots to navigate complex environments. While initially designed for wheeled and tracked robots, its modular architecture and advanced capabilities make it adaptable and highly relevant for path planning in more complex platforms, such as humanoid robots.",
+  "source": "@site/docs/module-3-ai-robot-brain/04-nav2-humanoids.md",
+  "sourceDirName": "module-3-ai-robot-brain",
+  "slug": "/module-3-ai-robot-brain/nav2-humanoids",
+  "permalink": "/docs/module-3-ai-robot-brain/nav2-humanoids",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/04-nav2-humanoids.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Isaac ROS: VSLAM and Perception Acceleration",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-ros"
+  },
+  "next": {
+    "title": "Chapter 10:  Vision-Language-Action (VLA)",
+    "permalink": "/docs/module-4-vla/vla-overview"
+  }
+}

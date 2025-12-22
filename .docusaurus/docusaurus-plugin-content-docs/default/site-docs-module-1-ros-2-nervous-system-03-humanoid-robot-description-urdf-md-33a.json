@@ -1,0 +1,27 @@
+{
+  "id": "module-1-ros2-nervous-system/humanoid-robot-description-urdf",
+  "title": "Chapter 3: Humanoid Robot Description with URDF",
+  "description": "We've learned how ROS 2 nodes communicate, but how do they know what the robot's body actually looks like? This is where the Unified Robot Description Format (URDF) comes in. URDF is an XML file format used in ROS to describe all the physical elements of a robot.",
+  "source": "@site/docs/module-1-ros2-nervous-system/03-humanoid-robot-description-urdf.md",
+  "sourceDirName": "module-1-ros2-nervous-system",
+  "slug": "/module-1-ros2-nervous-system/humanoid-robot-description-urdf",
+  "permalink": "/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1-ros2-nervous-system/03-humanoid-robot-description-urdf.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 2: Python Agents with rclpy",
+    "permalink": "/docs/module-1-ros2-nervous-system/python-agents-with-rclpy"
+  },
+  "next": {
+    "title": "Chapter 4: The Digital Twin",
+    "permalink": "/docs/module-2/digital-twins"
+  }
+}
