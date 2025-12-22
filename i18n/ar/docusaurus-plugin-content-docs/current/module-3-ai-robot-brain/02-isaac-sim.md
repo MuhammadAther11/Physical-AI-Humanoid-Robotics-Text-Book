@@ -1,5 +1,5 @@
 ---
-title: Isaac Sim: Photorealistic Simulation and Synthetic Data
+title: "Isaac Sim: Photorealistic Simulation and Synthetic Data"
 ---
 
 **NVIDIA Isaac Sim** is a powerful and scalable robotics simulation application built on the NVIDIA Omniverse platform. It is a critical component in the development of AI-powered robots, offering a highly realistic virtual environment for design, testing, and training without the constraints and costs associated with physical hardware.

@@ -1,5 +1,5 @@
 ---
-title: Nav2: Path Planning for Humanoid Robots
+title: "Nav2: Path Planning for Humanoid Robots"
 ---
 
 **Nav2 (Navigation2)** is the ROS 2-native navigation stack, providing a complete framework for autonomous mobile robots to navigate complex environments. While initially designed for wheeled and tracked robots, its modular architecture and advanced capabilities make it adaptable and highly relevant for path planning in more complex platforms, such as **humanoid robots**.
