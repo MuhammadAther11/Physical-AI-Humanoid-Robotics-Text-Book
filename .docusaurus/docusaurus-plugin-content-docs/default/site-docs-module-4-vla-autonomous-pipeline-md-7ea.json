@@ -1,0 +1,20 @@
+{
+  "id": "module-4-vla/autonomous-pipeline",
+  "title": "Chapter 13: Capstone: Autonomous Humanoid Pipeline",
+  "description": "This chapter covers the integration of Voice-to-Action and LLM Task Planning into an end-to-end autonomous pipeline for humanoid robots.",
+  "source": "@site/docs/module-4-vla/autonomous-pipeline.md",
+  "sourceDirName": "module-4-vla",
+  "slug": "/module-4-vla/autonomous-pipeline",
+  "permalink": "/docs/module-4-vla/autonomous-pipeline",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4-vla/autonomous-pipeline.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 12: LLM-Based Task Planning to ROS 2",
+    "permalink": "/docs/module-4-vla/llm-task-planning"
+  }
+}

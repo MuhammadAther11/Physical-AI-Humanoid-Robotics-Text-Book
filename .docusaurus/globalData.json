@@ -1,0 +1,93 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "module-1-ros2-nervous-system/ros2-fundamentals",
+          "docs": [
+            {
+              "id": "module-1-ros2-nervous-system/humanoid-robot-description-urdf",
+              "path": "/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1-ros2-nervous-system/python-agents-with-rclpy",
+              "path": "/docs/module-1-ros2-nervous-system/python-agents-with-rclpy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1-ros2-nervous-system/ros2-fundamentals",
+              "path": "/docs/module-1-ros2-nervous-system/ros2-fundamentals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/digital-twins",
+              "path": "/docs/module-2/digital-twins",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/unity-visualization",
+              "path": "/docs/module-2/unity-visualization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-overview",
+              "path": "/docs/module-3-ai-robot-brain/isaac-overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-ros",
+              "path": "/docs/module-3-ai-robot-brain/isaac-ros",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-sim",
+              "path": "/docs/module-3-ai-robot-brain/isaac-sim",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/nav2-humanoids",
+              "path": "/docs/module-3-ai-robot-brain/nav2-humanoids",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/autonomous-pipeline",
+              "path": "/docs/module-4-vla/autonomous-pipeline",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/llm-task-planning",
+              "path": "/docs/module-4-vla/llm-task-planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/vla-overview",
+              "path": "/docs/module-4-vla/vla-overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/voice-to-action",
+              "path": "/docs/module-4-vla/voice-to-action",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/module-1-ros2-nervous-system/ros2-fundamentals",
+                "label": "module-1-ros2-nervous-system/ros2-fundamentals"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

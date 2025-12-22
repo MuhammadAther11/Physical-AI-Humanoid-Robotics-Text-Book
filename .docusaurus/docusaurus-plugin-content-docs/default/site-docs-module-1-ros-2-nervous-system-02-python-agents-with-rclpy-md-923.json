@@ -1,0 +1,27 @@
+{
+  "id": "module-1-ros2-nervous-system/python-agents-with-rclpy",
+  "title": "Chapter 2: Python Agents with rclpy",
+  "description": "Now that we understand the fundamental concepts of ROS 2, let's put them into practice. This chapter will show you how to write your own ROS 2 nodes using Python, the language of choice for many AI and robotics applications. We will use the rclpy library, which is the official ROS 2 client library for Python.",
+  "source": "@site/docs/module-1-ros2-nervous-system/02-python-agents-with-rclpy.md",
+  "sourceDirName": "module-1-ros2-nervous-system",
+  "slug": "/module-1-ros2-nervous-system/python-agents-with-rclpy",
+  "permalink": "/docs/module-1-ros2-nervous-system/python-agents-with-rclpy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1-ros2-nervous-system/02-python-agents-with-rclpy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1: ROS 2 Fundamentals",
+    "permalink": "/docs/module-1-ros2-nervous-system/ros2-fundamentals"
+  },
+  "next": {
+    "title": "Chapter 3: Humanoid Robot Description with URDF",
+    "permalink": "/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf"
+  }
+}

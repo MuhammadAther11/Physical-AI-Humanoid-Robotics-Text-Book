@@ -1,0 +1,27 @@
+{
+  "id": "module-2/digital-twins",
+  "title": "Chapter 4: The Digital Twin",
+  "description": "Welcome to the second module in our series on Physical AI and Humanoid Robotics. In this module, we'll dive deep into the concept of the Digital Twin.",
+  "source": "@site/docs/module-2/01-digital-twins.md",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/digital-twins",
+  "permalink": "/docs/module-2/digital-twins",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/01-digital-twins.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 3: Humanoid Robot Description with URDF",
+    "permalink": "/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf"
+  },
+  "next": {
+    "title": "Chapter 5: Visualizing the Robot in Unity",
+    "permalink": "/docs/module-2/unity-visualization"
+  }
+}
