@@ -1,0 +1,26 @@
+/* Navbar.module.css */
+.navbar {
+  background-color: var(--ifm-navbar-background-color);
+  box-shadow: var(--ifm-navbar-shadow);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.navbarItems {
+  display: flex;
+  align-items: center;
+}
+
+.navbarItemsRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

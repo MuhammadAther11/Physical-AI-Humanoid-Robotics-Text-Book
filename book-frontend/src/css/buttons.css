@@ -1,0 +1,237 @@
+/* Custom Styling for Links and Buttons */
+
+/* Button base styles */
+.button {
+  display: inline-block;
+  padding: var(--ifm-button-padding-vertical) var(--ifm-button-padding-horizontal);
+  border: none;
+  border-radius: var(--ifm-button-border-radius);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--ifm-button-size);
+  font-weight: var(--ifm-button-weight);
+  line-height: var(--ifm-line-height-base);
+  transition: all var(--ifm-transition-fast) ease;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Primary button */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-button-color-primary-text);
+}
+
+.button--primary:hover,
+.button--primary:focus {
+  background-color: var(--ifm-color-primary-dark);
+  color: var(--ifm-button-color-primary-text);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Secondary button */
+.button--secondary {
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-button-color-secondary-text);
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+  background-color: var(--ifm-color-secondary-dark);
+  color: var(--ifm-button-color-secondary-text);
+}
+
+/* Success button */
+.button--success {
+  background-color: var(--ifm-color-success);
+  color: var(--ifm-button-color-success-text);
+}
+
+.button--success:hover,
+.button--success:focus {
+  background-color: var(--ifm-color-success-dark);
+  color: var(--ifm-button-color-success-text);
+}
+
+/* Danger button */
+.button--danger {
+  background-color: var(--ifm-color-danger);
+  color: var(--ifm-button-color-danger-text);
+}
+
+.button--danger:hover,
+.button--danger:focus {
+  background-color: var(--ifm-color-danger-dark);
+  color: var(--ifm-button-color-danger-text);
+}
+
+/* Outline button */
+.button--outline {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.button--outline:hover,
+.button--outline:focus {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-button-color-primary-text);
+}
+
+/* Small button */
+.button--sm {
+  padding: calc(var(--ifm-button-padding-vertical) * 0.75) calc(var(--ifm-button-padding-horizontal) * 0.75);
+  font-size: calc(var(--ifm-button-size) * 0.875);
+}
+
+/* Large button */
+.button--lg {
+  padding: calc(var(--ifm-button-padding-vertical) * 1.25) calc(var(--ifm-button-padding-horizontal) * 1.25);
+  font-size: calc(var(--ifm-button-size) * 1.25);
+}
+
+/* Disabled button */
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Link styles */
+.link--primary {
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+}
+
+.link--primary:hover,
+.link--primary:focus {
+  color: var(--ifm-color-primary-dark);
+}
+
+.link--secondary {
+  color: var(--ifm-color-secondary);
+  text-decoration: underline;
+}
+
+.link--secondary:hover,
+.link--secondary:focus {
+  color: var(--ifm-color-secondary-dark);
+}
+
+/* Button with icon */
+.button--with-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button--with-icon .button__icon {
+  margin-right: var(--ifm-button-icon-spacing);
+}
+
+.button--with-icon .button__icon:last-child {
+  margin-right: 0;
+  margin-left: var(--ifm-button-icon-spacing);
+}
+
+/* Loading button */
+.button--loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.button--loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: button-loading-spin 1s linear infinite;
+}
+
+@keyframes button-loading-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Button groups */
+.button-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.button-group .button {
+  border-radius: 0;
+}
+
+.button-group .button:first-child {
+  border-top-left-radius: var(--ifm-button-border-radius);
+  border-bottom-left-radius: var(--ifm-button-border-radius);
+}
+
+.button-group .button:last-child {
+  border-top-right-radius: var(--ifm-button-border-radius);
+  border-bottom-right-radius: var(--ifm-button-border-radius);
+}
+
+/* Block button */
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+/* Focus styles for accessibility */
+.button:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Responsive button styles */
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+    margin-bottom: var(--ifm-spacing-sm);
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .button-group .button {
+    border-radius: var(--ifm-button-border-radius);
+    margin-bottom: var(--ifm-spacing-xs);
+  }
+  
+  .button-group .button:first-child,
+  .button-group .button:last-child {
+    border-radius: var(--ifm-button-border-radius);
+  }
+}
+
+/* Dark mode button adjustments */
+[data-theme='dark'] .button--outline {
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .button--outline:hover,
+[data-theme='dark'] .button--outline:focus {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-button-color-primary-text);
+}

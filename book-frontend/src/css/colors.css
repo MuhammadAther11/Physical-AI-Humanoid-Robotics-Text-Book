@@ -1,0 +1,195 @@
+/* Color Palette System */
+
+:root {
+  /* Primary Colors */
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  
+  /* Secondary Colors */
+  --ifm-color-secondary: #64748b;
+  --ifm-color-secondary-dark: #475569;
+  --ifm-color-secondary-darker: #334155;
+  --ifm-color-secondary-darkest: #1e293b;
+  --ifm-color-secondary-light: #94a3b8;
+  --ifm-color-secondary-lighter: #cbd5e1;
+  --ifm-color-secondary-lightest: #e2e8f0;
+  
+  /* Accent Colors */
+  --ifm-color-accent: #8b5cf6;
+  --ifm-color-accent-dark: #7c3aed;
+  --ifm-color-accent-darker: #6d28d9;
+  --ifm-color-accent-darkest: #5b21b6;
+  --ifm-color-accent-light: #a78bfa;
+  --ifm-color-accent-lighter: #c4b5fd;
+  --ifm-color-accent-lightest: #ddd6fe;
+  
+  /* Success Colors */
+  --ifm-color-success: #10b981;
+  --ifm-color-success-dark: #059669;
+  --ifm-color-success-darker: #047857;
+  --ifm-color-success-darkest: #065f46;
+  --ifm-color-success-light: #34d399;
+  --ifm-color-success-lighter: #6ee7b7;
+  --ifm-color-success-lightest: #a7f3d0;
+  
+  /* Warning Colors */
+  --ifm-color-warning: #f59e0b;
+  --ifm-color-warning-dark: #d97706;
+  --ifm-color-warning-darker: #b45309;
+  --ifm-color-warning-darkest: #92400e;
+  --ifm-color-warning-light: #fbbf24;
+  --ifm-color-warning-lighter: #fcd34d;
+  --ifm-color-warning-lightest: #fed7aa;
+  
+  /* Danger Colors */
+  --ifm-color-danger: #ef4444;
+  --ifm-color-danger-dark: #dc2626;
+  --ifm-color-danger-darker: #b91c1c;
+  --ifm-color-danger-darkest: #991b1b;
+  --ifm-color-danger-light: #f87171;
+  --ifm-color-danger-lighter: #fca5a5;
+  --ifm-color-danger-lightest: #fecaca;
+  
+  /* Neutral Colors */
+  --ifm-color-gray-50: #f9fafb;
+  --ifm-color-gray-100: #f3f4f6;
+  --ifm-color-gray-200: #e5e7eb;
+  --ifm-color-gray-300: #d1d5db;
+  --ifm-color-gray-400: #9ca3af;
+  --ifm-color-gray-500: #6b7280;
+  --ifm-color-gray-600: #4b5563;
+  --ifm-color-gray-700: #374151;
+  --ifm-color-gray-800: #1f2937;
+  --ifm-color-gray-900: #111827;
+  
+  /* Background Colors */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f9fafb;
+  
+  /* Text Colors */
+  --ifm-text-color: #111827;
+  --ifm-text-color-inverse: #ffffff;
+  --ifm-text-color-secondary: #6b7280;
+  
+  /* Border Colors */
+  --ifm-border-color: #e5e7eb;
+  --ifm-border-color-light: #f3f4f6;
+  --ifm-border-color-dark: #d1d5db;
+  
+  /* Code Colors */
+  --ifm-code-background: #f3f4f6;
+  --ifm-code-color: #1f2937;
+  
+  /* Shadow Colors */
+  --ifm-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode colors */
+[data-theme='dark'] {
+  /* Primary Colors */
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+  
+  /* Secondary Colors */
+  --ifm-color-secondary: #94a3b8;
+  --ifm-color-secondary-dark: #cbd5e1;
+  --ifm-color-secondary-darker: #e2e8f0;
+  --ifm-color-secondary-darkest: #f1f5f9;
+  --ifm-color-secondary-light: #64748b;
+  --ifm-color-secondary-lighter: #475569;
+  --ifm-color-secondary-lightest: #334155;
+  
+  /* Accent Colors */
+  --ifm-color-accent: #c4b5fd;
+  --ifm-color-accent-dark: #a78bfa;
+  --ifm-color-accent-darker: #8b5cf6;
+  --ifm-color-accent-darkest: #7c3aed;
+  --ifm-color-accent-light: #ddd6fe;
+  --ifm-color-accent-lighter: #e9d5ff;
+  --ifm-color-accent-lightest: #f3e8ff;
+  
+  /* Success Colors */
+  --ifm-color-success: #6ee7b7;
+  --ifm-color-success-dark: #34d399;
+  --ifm-color-success-darker: #10b981;
+  --ifm-color-success-darkest: #059669;
+  --ifm-color-success-light: #a7f3d0;
+  --ifm-color-success-lighter: #ccfbf1;
+  --ifm-color-success-lightest: #e6ffec;
+  
+  /* Warning Colors */
+  --ifm-color-warning: #fcd34d;
+  --ifm-color-warning-dark: #fbbf24;
+  --ifm-color-warning-darker: #f59e0b;
+  --ifm-color-warning-darkest: #d97706;
+  --ifm-color-warning-light: #fed7aa;
+  --ifm-color-warning-lighter: #ffedd5;
+  --ifm-color-warning-lightest: #fffbeb;
+  
+  /* Danger Colors */
+  --ifm-color-danger: #fca5a5;
+  --ifm-color-danger-dark: #f87171;
+  --ifm-color-danger-darker: #ef4444;
+  --ifm-color-danger-darkest: #dc2626;
+  --ifm-color-danger-light: #fecaca;
+  --ifm-color-danger-lighter: #fee2e2;
+  --ifm-color-danger-lightest: #fef2f2;
+  
+  /* Neutral Colors */
+  --ifm-color-gray-50: #111827;
+  --ifm-color-gray-100: #1f2937;
+  --ifm-color-gray-200: #374151;
+  --ifm-color-gray-300: #4b5563;
+  --ifm-color-gray-400: #6b7280;
+  --ifm-color-gray-500: #9ca3af;
+  --ifm-color-gray-600: #d1d5db;
+  --ifm-color-gray-700: #e5e7eb;
+  --ifm-color-gray-800: #f3f4f6;
+  --ifm-color-gray-900: #f9fafb;
+  
+  /* Background Colors */
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+  
+  /* Text Colors */
+  --ifm-text-color: #f9fafb;
+  --ifm-text-color-inverse: #111827;
+  --ifm-text-color-secondary: #9ca3af;
+  
+  /* Border Colors */
+  --ifm-border-color: #374151;
+  --ifm-border-color-light: #1f2937;
+  --ifm-border-color-dark: #4b5563;
+  
+  /* Code Colors */
+  --ifm-code-background: #1f2937;
+  --ifm-code-color: #e5e7eb;
+  
+  /* Shadow Colors */
+  --ifm-shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Color utility classes */
+.color-primary { color: var(--ifm-color-primary); }
+.color-secondary { color: var(--ifm-color-secondary); }
+.color-accent { color: var(--ifm-color-accent); }
+.color-success { color: var(--ifm-color-success); }
+.color-warning { color: var(--ifm-color-warning); }
+.color-danger { color: var(--ifm-color-danger); }
+
+.bg-primary { background-color: var(--ifm-color-primary); }
+.bg-secondary { background-color: var(--ifm-color-secondary); }
+.bg-accent { background-color: var(--ifm-color-accent); }
+.bg-success { background-color: var(--ifm-color-success); }
+.bg-warning { background-color: var(--ifm-color-warning); }
+.bg-danger { background-color: var(--ifm-color-danger); }

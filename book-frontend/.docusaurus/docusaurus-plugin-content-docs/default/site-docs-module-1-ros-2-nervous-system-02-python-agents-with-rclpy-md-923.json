@@ -5,7 +5,7 @@
   "source": "@site/docs/module-1-ros2-nervous-system/02-python-agents-with-rclpy.md",
   "sourceDirName": "module-1-ros2-nervous-system",
   "slug": "/module-1-ros2-nervous-system/python-agents-with-rclpy",
-  "permalink": "/ar/docs/module-1-ros2-nervous-system/python-agents-with-rclpy",
+  "permalink": "/docs/module-1-ros2-nervous-system/python-agents-with-rclpy",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1-ros2-nervous-system/02-python-agents-with-rclpy.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Chapter 1: ROS 2 Fundamentals",
-    "permalink": "/ar/docs/module-1-ros2-nervous-system/ros2-fundamentals"
+    "permalink": "/docs/module-1-ros2-nervous-system/ros2-fundamentals"
   },
   "next": {
     "title": "Chapter 3: Humanoid Robot Description with URDF",
-    "permalink": "/ar/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf"
+    "permalink": "/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf"
   }
 }

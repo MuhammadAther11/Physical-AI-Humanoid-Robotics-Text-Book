@@ -1,281 +1,324 @@
 {
-  "/ar/blog-517": {
-    "__comp": "a6aa9e1f",
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "7661071f"
-      },
-      {
-        "content": "f4f34a3a"
-      },
-      {
-        "content": "8717b14a"
-      },
-      {
-        "content": "925b3f96"
-      }
-    ],
-    "__props": "12178d65"
-  },
-  "/ar/blog/archive-085": {
-    "__comp": "9e4087bc",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "__props": "d9f55b2f"
-  },
-  "/ar/blog/authors-572": {
-    "__comp": "621db11d",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "__props": "9c039ed4"
-  },
-  "/ar/blog/authors/all-sebastien-lorber-articles-7b4": {
-    "__comp": "33fc5bb8",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "items": [
-      {
-        "content": "7661071f"
-      },
-      {
-        "content": "f4f34a3a"
-      },
-      {
-        "content": "925b3f96"
-      }
-    ],
-    "sidebar": "814f3328",
-    "__props": "5cd3a940"
-  },
-  "/ar/blog/authors/yangshun-b8c": {
-    "__comp": "33fc5bb8",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "items": [
-      {
-        "content": "7661071f"
-      },
-      {
-        "content": "8717b14a"
-      },
-      {
-        "content": "925b3f96"
-      }
-    ],
-    "sidebar": "814f3328",
-    "__props": "c1566a02"
-  },
-  "/ar/blog/first-blog-post-cd1": {
-    "__comp": "ccc49370",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "content": "e273c56f"
-  },
-  "/ar/blog/long-blog-post-192": {
-    "__comp": "ccc49370",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "content": "73664a40"
-  },
-  "/ar/blog/mdx-blog-post-117": {
-    "__comp": "ccc49370",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "content": "59362658"
-  },
-  "/ar/blog/tags-7ca": {
-    "__comp": "01a85c17",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "__props": "f1cea540"
-  },
-  "/ar/blog/tags/docusaurus-fcd": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "7661071f"
-      },
-      {
-        "content": "f4f34a3a"
-      },
-      {
-        "content": "8717b14a"
-      },
-      {
-        "content": "925b3f96"
-      }
-    ],
-    "__props": "bc4596c7"
-  },
-  "/ar/blog/tags/facebook-c8f": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "7661071f"
-      }
-    ],
-    "__props": "aa3a5d19"
-  },
-  "/ar/blog/tags/hello-b0b": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "7661071f"
-      },
-      {
-        "content": "8717b14a"
-      }
-    ],
-    "__props": "a817fc67"
-  },
-  "/ar/blog/tags/hola-803": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "925b3f96"
-      }
-    ],
-    "__props": "a49a8039"
-  },
-  "/ar/blog/welcome-c05": {
-    "__comp": "ccc49370",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "content": "d9f32620"
-  },
-  "/ar/markdown-page-a73": {
-    "__comp": "1f391b9e",
-    "__context": {
-      "plugin": "a7456010"
-    },
-    "content": "393be207"
-  },
-  "/ar/docs-4a6": {
-    "__comp": "5e95c892",
-    "__context": {
-      "plugin": "aba21aa0"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/ar/docs-f8e": {
-    "__comp": "a7bd4aaa",
-    "__props": "e3ffa3f8"
-  },
-  "/ar/docs-316": {
-    "__comp": "a94703ab"
-  },
-  "/ar/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf-065": {
-    "__comp": "17896441",
-    "content": "33ad027f"
-  },
-  "/ar/docs/module-1-ros2-nervous-system/python-agents-with-rclpy-c8c": {
-    "__comp": "17896441",
-    "content": "923ca81e"
-  },
-  "/ar/docs/module-1-ros2-nervous-system/ros2-fundamentals-a55": {
-    "__comp": "17896441",
-    "content": "85482321"
-  },
-  "/ar/docs/module-2/digital-twins-aef": {
-    "__comp": "17896441",
-    "content": "5cc85477"
-  },
-  "/ar/docs/module-2/unity-visualization-279": {
-    "__comp": "17896441",
-    "content": "951f0701"
-  },
-  "/ar/docs/module-3-ai-robot-brain/isaac-overview-15f": {
-    "__comp": "17896441",
-    "content": "f5d51339"
-  },
-  "/ar/docs/module-3-ai-robot-brain/isaac-ros-dd5": {
-    "__comp": "17896441",
-    "content": "2a1a7829"
-  },
-  "/ar/docs/module-3-ai-robot-brain/isaac-sim-718": {
-    "__comp": "17896441",
-    "content": "a660c528"
-  },
-  "/ar/docs/module-3-ai-robot-brain/nav2-humanoids-3ab": {
-    "__comp": "17896441",
-    "content": "aa069efd"
-  },
-  "/ar/docs/module-4-vla/autonomous-pipeline-844": {
-    "__comp": "17896441",
-    "content": "7ea99867"
-  },
-  "/ar/docs/module-4-vla/llm-task-planning-7ad": {
-    "__comp": "17896441",
-    "content": "7834f56a"
-  },
-  "/ar/docs/module-4-vla/vla-overview-909": {
-    "__comp": "17896441",
-    "content": "30d71c03"
-  },
-  "/ar/docs/module-4-vla/voice-to-action-d40": {
-    "__comp": "17896441",
-    "content": "a7fec69c"
-  },
-  "/ar/-cb7": {
-    "__comp": "1df93b7f",
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     },
-    "config": "5e9f5e1a"
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/blog-b2f": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blogf-4-f-cd7"
+      },
+      {
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "__props": "__props---blogc-15-573"
+  },
+  "/blog/archive-182": {
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "__props": "__props---blog-archivef-81-229"
+  },
+  "/blog/authors-0b7": {
+    "__comp": "__comp---theme-blog-pages-blog-authors-list-page-621-70c",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-authorsef-8-44f"
+  },
+  "/blog/authors/all-sebastien-lorber-articles-4a1": {
+    "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blogf-4-f-cd7"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-authors-all-sebastien-lorber-articlesc-9-c-639"
+  },
+  "/blog/authors/yangshun-a68": {
+    "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-authors-yangshun-1-de-d0c"
+  },
+  "/blog/first-blog-post-89a": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-first-blog-poste-27-4a1"
+  },
+  "/blog/long-blog-post-9ad": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-long-blog-post-736-bc7"
+  },
+  "/blog/mdx-blog-post-e9f": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-mdx-blog-post-593-37b"
+  },
+  "/blog/tags-287": {
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-tags-3-a-2-fa2"
+  },
+  "/blog/tags/docusaurus-704": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blogf-4-f-cd7"
+      },
+      {
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "__props": "__props---blog-tags-docusaurus-321-832"
+  },
+  "/blog/tags/facebook-858": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      }
+    ],
+    "__props": "__props---blog-tags-facebooke-5-a-514"
+  },
+  "/blog/tags/hello-299": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blog-871-381"
+      }
+    ],
+    "__props": "__props---blog-tags-hellof-82-2fd"
+  },
+  "/blog/tags/hola-00d": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "__props": "__props---blog-tags-hola-5-e-9-9a3"
+  },
+  "/blog/welcome-d2b": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-welcomed-9-f-ffb"
+  },
+  "/markdown-page-3d7": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---markdown-pagea-74-7b5"
+    },
+    "content": "content---markdown-page-393-028"
+  },
+  "/docs-782": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsaba-d7c"
+    }
+  },
+  "/docs-5ba": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-005-788"
+  },
+  "/docs-cab": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/module-1-ros2-nervous-system/humanoid-robot-description-urdf-31c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-ros-2-nervous-system-humanoid-robot-description-urdf-33-a-bb4"
+  },
+  "/docs/module-1-ros2-nervous-system/python-agents-with-rclpy-2a0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-ros-2-nervous-system-python-agents-with-rclpy-923-a59"
+  },
+  "/docs/module-1-ros2-nervous-system/ros2-fundamentals-5b5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-ros-2-nervous-system-ros-2-fundamentals-854-51c"
+  },
+  "/docs/module-2/digital-twins-3c3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-digital-twins-5-cc-2fe"
+  },
+  "/docs/module-2/unity-visualization-8b2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-unity-visualization-951-7c7"
+  },
+  "/docs/module-3-ai-robot-brain/isaac-overview-4ba": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-ai-robot-brain-isaac-overviewf-5-d-d1e"
+  },
+  "/docs/module-3-ai-robot-brain/isaac-ros-8b2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-ai-robot-brain-isaac-ros-2-a-1-bc6"
+  },
+  "/docs/module-3-ai-robot-brain/isaac-sim-e1f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-ai-robot-brain-isaac-sima-66-210"
+  },
+  "/docs/module-3-ai-robot-brain/nav2-humanoids-a1f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-ai-robot-brain-nav-2-humanoidsaa-0-e30"
+  },
+  "/docs/module-4-vla/autonomous-pipeline-22e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-vla-autonomous-pipeline-7-ea-108"
+  },
+  "/docs/module-4-vla/llm-task-planning-8be": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-vla-llm-task-planning-783-8ef"
+  },
+  "/docs/module-4-vla/vla-overview-cb9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-vla-vla-overview-30-d-4d7"
+  },
+  "/docs/module-4-vla/voice-to-action-e0a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-vla-voice-to-actiona-7-f-c95"
+  },
+  "/-e5f": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---markdown-pagea-74-7b5"
+    },
+    "config": "config---5-e-9-4f3"
   }
 }

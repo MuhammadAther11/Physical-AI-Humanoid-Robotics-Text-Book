@@ -1,0 +1,95 @@
+/* Accessibility Utilities */
+
+/* Focus indicators for keyboard navigation */
+.focusable:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --ifm-color-emphasis-0: var(--ifm-color-gray-100);
+    --ifm-color-emphasis-100: var(--ifm-color-gray-200);
+    --ifm-color-emphasis-200: var(--ifm-color-gray-300);
+    --ifm-color-emphasis-300: var(--ifm-color-gray-400);
+    --ifm-color-emphasis-400: var(--ifm-color-gray-500);
+    --ifm-color-emphasis-500: var(--ifm-color-gray-600);
+    --ifm-color-emphasis-600: var(--ifm-color-gray-700);
+    --ifm-color-emphasis-700: var(--ifm-color-gray-800);
+    --ifm-color-emphasis-800: var(--ifm-color-gray-900);
+    --ifm-color-emphasis-900: var(--ifm-color-gray-1000);
+    --ifm-color-emphasis-1000: var(--ifm-color-gray-1000);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip to content link for keyboard users */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-white);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 0 0 4px 4px;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* WCAG 2.1 AA compliant contrast ratios */
+.wcag-aa {
+  color: var(--ifm-color-emphasis-900);
+  background-color: var(--ifm-color-emphasis-0);
+}
+
+/* Text size adjustments */
+.text-smaller {
+  font-size: 0.875rem;
+}
+
+.text-larger {
+  font-size: 1.125rem;
+}
+
+/* ARIA attributes styling */
+[aria-current="page"] {
+  font-weight: bold;
+}
+
+[aria-disabled="true"] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Focus visible polyfill for better browser support */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}

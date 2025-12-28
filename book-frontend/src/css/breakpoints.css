@@ -1,0 +1,75 @@
+/* Responsive Breakpoints */
+:root {
+  /* Mobile breakpoints */
+  --ifm-breakpoint-xs: 0;
+  --ifm-breakpoint-sm: 576px;
+  --ifm-breakpoint-md: 768px;
+  --ifm-breakpoint-lg: 992px;
+  --ifm-breakpoint-xl: 1200px;
+  --ifm-breakpoint-xxl: 1400px;
+}
+
+/* Mobile First Approach */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Styles for extra small devices */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles for small devices */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for medium devices */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Styles for extra large devices */
+}
+
+/* Utility classes for responsive design */
+.responsive-container {
+  width: 100%;
+  padding-right: var(--ifm-spacing-horizontal);
+  padding-left: var(--ifm-spacing-horizontal);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .responsive-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .responsive-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .responsive-container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .responsive-container {
+    max-width: 1320px;
+  }
+}

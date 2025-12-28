@@ -1,0 +1,138 @@
+/* High Contrast Mode */
+
+/* High contrast variables */
+:root {
+  --ifm-color-contrast-text: #000000;
+  --ifm-color-contrast-bg: #ffffff;
+  --ifm-color-contrast-border: #000000;
+  --ifm-color-contrast-link: #0000ff;
+  --ifm-color-contrast-highlight: #ffff00;
+}
+
+/* High contrast mode */
+.high-contrast {
+  background-color: var(--ifm-color-contrast-bg) !important;
+  color: var(--ifm-color-contrast-text) !important;
+}
+
+.high-contrast * {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: var(--ifm-color-contrast-border) !important;
+}
+
+/* High contrast mode via media query */
+@media (prefers-contrast: high) {
+  :root {
+    --ifm-color-primary: var(--ifm-color-contrast-text);
+    --ifm-color-primary-dark: var(--ifm-color-contrast-text);
+    --ifm-color-primary-darker: var(--ifm-color-contrast-text);
+    --ifm-color-primary-darkest: var(--ifm-color-contrast-text);
+    --ifm-color-primary-light: var(--ifm-color-contrast-text);
+    --ifm-color-primary-lighter: var(--ifm-color-contrast-text);
+    --ifm-color-primary-lightest: var(--ifm-color-contrast-text);
+    
+    --ifm-text-color: var(--ifm-color-contrast-text);
+    --ifm-background-color: var(--ifm-color-contrast-bg);
+    --ifm-border-color: var(--ifm-color-contrast-border);
+  }
+  
+  body {
+    background-color: var(--ifm-background-color);
+    color: var(--ifm-text-color);
+  }
+  
+  a {
+    color: var(--ifm-color-contrast-link);
+  }
+  
+  .button--outline {
+    border-color: var(--ifm-color-contrast-border);
+  }
+  
+  /* Ensure all text has sufficient contrast */
+  h1, h2, h3, h4, h5, h6, p, span, div, li, td, th {
+    color: var(--ifm-color-contrast-text) !important;
+  }
+  
+  /* Highlight important elements */
+  .highlight,
+  mark,
+  .alert {
+    background-color: var(--ifm-color-contrast-highlight) !important;
+    color: var(--ifm-color-contrast-text) !important;
+  }
+  
+  /* Ensure borders are visible */
+  .card,
+  .form-control,
+  .table {
+    border: 2px solid var(--ifm-color-contrast-border) !important;
+  }
+}
+
+/* High contrast toggle component styles */
+.contrast-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--ifm-border-color);
+}
+
+.contrast-toggle__label {
+  margin: 0;
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+.contrast-toggle__switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.contrast-toggle__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.contrast-toggle__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.contrast-toggle__slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.contrast-toggle__switch input:checked + .contrast-toggle__slider {
+  background-color: var(--ifm-color-primary);
+}
+
+.contrast-toggle__switch input:checked + .contrast-toggle__slider:before {
+  transform: translateX(26px);
+}
+
+/* Focus styles for accessibility */
+.contrast-toggle__switch input:focus + .contrast-toggle__slider {
+  box-shadow: 0 0 0 2px var(--ifm-color-primary);
+}

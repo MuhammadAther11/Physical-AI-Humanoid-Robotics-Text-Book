@@ -1,0 +1,46 @@
+/* LastUpdated.module.css */
+.lastUpdated {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-toc-border-color);
+}
+
+.relatedContent {
+  margin-bottom: 1rem;
+}
+
+.relatedTitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+.relatedList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.relatedItem {
+  margin-bottom: 0.25rem;
+}
+
+.relatedLink {
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+  transition: color var(--ifm-transition-fast) ease;
+}
+
+.relatedLink:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: underline;
+}
+
+.lastUpdatedInfo {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.lastUpdatedText {
+  margin: 0;
+}

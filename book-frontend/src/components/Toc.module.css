@@ -1,0 +1,49 @@
+/* Toc.module.css */
+.toc {
+  padding: 1rem;
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-menu-background-color);
+  align-self: flex-start;
+  margin-left: 1rem;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+
+.tocTitle {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+  color: var(--ifm-toc-link-color);
+}
+
+.tocList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.tocItem {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+
+.tocLink {
+  color: var(--ifm-toc-link-color);
+  text-decoration: none;
+  display: block;
+  padding: 0.125rem 0;
+  transition: color var(--ifm-transition-fast) ease;
+}
+
+.tocLink:hover {
+  color: var(--ifm-color-primary);
+}
+
+.tocLink--active {
+  color: var(--ifm-color-primary);
+  font-weight: var(--ifm-font-weight-semibold);
+}

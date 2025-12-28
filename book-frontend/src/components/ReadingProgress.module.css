@@ -1,0 +1,30 @@
+/* ReadingProgress.module.css */
+.readingProgress {
+  position: fixed;
+  top: var(--ifm-navbar-height);
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--ifm-color-emphasis-200);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.readingProgressBar {
+  height: 100%;
+  background-color: var(--ifm-color-primary);
+  transition: width 0.2s ease;
+}
+
+.readingProgressText {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  background-color: var(--ifm-background-surface-color);
+  padding: 0.125rem 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}

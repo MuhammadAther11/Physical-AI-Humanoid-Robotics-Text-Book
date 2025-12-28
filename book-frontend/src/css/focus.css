@@ -1,0 +1,133 @@
+/* Focus indicators for keyboard navigation */
+
+/* Focus styles for all focusable elements */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Better focus style for accessibility */
+.focusable:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+/* Focus visible polyfill support */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.js-focus-visible .focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Skip to content link for keyboard users */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-white);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 0 0 4px 4px;
+  transition: top 0.3s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Focus styles for interactive elements */
+.button:focus,
+.navbar__link:focus,
+.menu__link:focus,
+.pagination__item:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  text-decoration: underline;
+}
+
+/* Focus styles for form elements */
+.form-control:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Focus styles for cards and content blocks */
+.card:focus,
+.content-block:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Focus styles for links */
+.anchor:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Focus styles for mobile navigation */
+.navbar__toggle:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Focus styles for search */
+.search__input:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Custom focus styles for accessibility */
+.focus-style-1:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.focus-style-2:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 0;
+  box-shadow: 0 0 0 2px var(--ifm-background-color), 0 0 0 4px var(--ifm-color-primary);
+}
+
+.focus-style-3:focus {
+  outline: 2px dashed var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Focus styles for high contrast mode */
+@media (prefers-contrast: high) {
+  a:focus,
+  button:focus,
+  input:focus,
+  select:focus,
+  textarea:focus,
+  [tabindex]:focus {
+    outline: 3px solid var(--ifm-color-contrast-text);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px var(--ifm-color-contrast-highlight);
+  }
+}
+
+/* Reduced motion support for focus indicators */
+@media (prefers-reduced-motion: reduce) {
+  .focusable:focus {
+    transition: none;
+  }
+  
+  .skip-to-content {
+    transition: none;
+  }
+}

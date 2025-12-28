@@ -29,7 +29,7 @@ export default {
     "experimental_router": "browser"
   },
   "url": "https://your-docusaurus-site.example.com",
-  "baseUrl": "/ar/",
+  "baseUrl": "/",
   "organizationName": "facebook",
   "projectName": "Physical-AI-Humanoid-Robotics-Text-Book",
   "onBrokenLinks": "throw",
@@ -89,9 +89,9 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "colorMode": {
-      "respectPrefersColorScheme": true,
       "defaultMode": "light",
-      "disableSwitch": false
+      "disableSwitch": false,
+      "respectPrefersColorScheme": true
     },
     "navbar": {
       "title": "AI-Native Textbook",
@@ -363,6 +363,10 @@ export default {
         }
       ]
     },
+    "tableOfContents": {
+      "minHeadingLevel": 2,
+      "maxHeadingLevel": 4
+    },
     "docs": {
       "versionPersistence": "localStorage",
       "sidebar": {
@@ -375,11 +379,7 @@ export default {
         "groupByYear": true
       }
     },
-    "metadata": [],
-    "tableOfContents": {
-      "minHeadingLevel": 2,
-      "maxHeadingLevel": 3
-    }
+    "metadata": []
   },
   "baseUrlIssueBanner": true,
   "onBrokenAnchors": "warn",

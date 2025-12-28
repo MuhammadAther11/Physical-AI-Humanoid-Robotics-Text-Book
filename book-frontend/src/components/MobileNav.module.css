@@ -1,0 +1,42 @@
+/* MobileNav.module.css */
+.mobileNav {
+  display: none;
+}
+
+@media (max-width: 996px) {
+  .mobileNav {
+    display: block;
+    background-color: var(--ifm-background-surface-color);
+    border-bottom: 1px solid var(--ifm-toc-border-color);
+    padding: 1rem;
+  }
+  
+  .mobileNavContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobileNavList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobileNavItem {
+    margin: 0.25rem 0;
+  }
+  
+  .mobileNavLink {
+    padding: 0.5rem 1rem;
+    border-radius: var(--ifm-global-radius);
+    text-decoration: none;
+    color: var(--ifm-font-color-base);
+    transition: background-color var(--ifm-transition-fast) ease;
+  }
+  
+  .mobileNavLink:hover {
+    background-color: var(--ifm-color-emphasis-100);
+  }
+}
