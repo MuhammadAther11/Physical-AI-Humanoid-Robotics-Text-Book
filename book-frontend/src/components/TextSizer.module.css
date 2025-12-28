@@ -1,0 +1,43 @@
+/* TextSizer.module.css */
+.textSizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.textSizerControls {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.textSizerButton {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-button-background-color, var(--ifm-color-emphasis-100));
+  color: var(--ifm-button-color, var(--ifm-color-emphasis-800));
+  cursor: pointer;
+  font-weight: var(--ifm-font-weight-semibold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--ifm-transition-fast) ease;
+}
+
+.textSizerButton:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+.textSizerButtonActive {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-color: var(--ifm-color-primary);
+}
+
+.textSizerLabel {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+}

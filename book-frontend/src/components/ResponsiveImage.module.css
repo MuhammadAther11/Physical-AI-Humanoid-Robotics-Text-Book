@@ -1,0 +1,19 @@
+/* ResponsiveImage.module.css */
+.responsiveImage {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.responsiveImageImg {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow);
+}
+
+.responsiveImageCaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+/* ThemeToggle.module.css */
+.themeToggle {
+  display: flex;
+  align-items: center;
+}
+
+.themeToggleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 50px;
+  background-color: var(--ifm-button-background-color, var(--ifm-color-emphasis-100));
+  color: var(--ifm-button-color, var(--ifm-color-emphasis-800));
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all var(--ifm-transition-fast) ease;
+}
+
+.themeToggleButton:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+.themeToggleIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}

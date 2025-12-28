@@ -1,7 +1,7 @@
 import logging
 from typing import List, Tuple
-from ..models.query import Query
-from ..models.response import RetrievedContent
+from ..models.query import QueryRequest as Query
+from ..models.retrieval import RetrievedContent
 
 
 class ValidationService:

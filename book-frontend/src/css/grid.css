@@ -1,0 +1,267 @@
+/* Responsive Grid System */
+
+/* Container */
+.container {
+  width: 100%;
+  padding-right: var(--ifm-spacing-horizontal);
+  padding-left: var(--ifm-spacing-horizontal);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Grid system */
+.grid {
+  display: grid;
+  gap: var(--ifm-spacing-md);
+  grid-template-columns: 1fr;
+}
+
+/* Two column grid */
+.grid--2col {
+  grid-template-columns: 1fr;
+}
+
+/* Three column grid */
+.grid--3col {
+  grid-template-columns: 1fr;
+}
+
+/* Four column grid */
+.grid--4col {
+  grid-template-columns: 1fr;
+}
+
+/* Responsive grid adjustments */
+@media (min-width: 768px) {
+  .grid--2col {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid--3col {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid--4col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid--2col {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid--3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid--4col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid--3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid--4col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Responsive utility classes */
+.hide-sm {
+  display: none;
+}
+
+.hide-md {
+  display: initial;
+}
+
+.hide-lg {
+  display: initial;
+}
+
+@media (min-width: 768px) {
+  .hide-sm {
+    display: initial;
+  }
+  
+  .hide-md {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hide-md {
+    display: initial;
+  }
+  
+  .hide-lg {
+    display: none;
+  }
+}
+
+/* Flexbox responsive utilities */
+.flex-responsive {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-responsive--row {
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .flex-responsive {
+    flex-direction: row;
+  }
+  
+  .flex-responsive--row {
+    flex-direction: row;
+  }
+}
+
+/* Responsive text alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .text-center-md {
+    text-align: center;
+  }
+  
+  .text-left-md {
+    text-align: left;
+  }
+  
+  .text-right-md {
+    text-align: right;
+  }
+}
+
+/* Responsive image handling */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card responsive layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--ifm-spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Navigation responsive */
+.nav-responsive {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .nav-responsive {
+    flex-direction: row;
+  }
+}
+
+/* Content responsive */
+.content-responsive {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-responsive--sidebar {
+  order: 2;
+}
+
+.content-responsive--main {
+  order: 1;
+}
+
+@media (min-width: 992px) {
+  .content-responsive {
+    flex-direction: row;
+  }
+  
+  .content-responsive--sidebar {
+    order: 1;
+    width: 25%;
+  }
+  
+  .content-responsive--main {
+    order: 2;
+    width: 75%;
+  }
+}
+
+/* Table responsive */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Button responsive */
+.btn-responsive {
+  width: 100%;
+  margin-bottom: var(--ifm-spacing-sm);
+}
+
+@media (min-width: 768px) {
+  .btn-responsive {
+    width: auto;
+    margin-bottom: 0;
+  }
+}

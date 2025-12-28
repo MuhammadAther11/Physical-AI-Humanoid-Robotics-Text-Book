@@ -1,0 +1,248 @@
+/* Fallbacks for older browsers */
+
+/* Flexbox fallbacks */
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* Grid fallbacks */
+.grid-fallback {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.grid-fallback > * {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 300px;
+  -ms-flex: 1 1 300px;
+  flex: 1 1 300px;
+  margin: 1%;
+}
+
+/* CSS Custom Properties fallbacks */
+:root {
+  /* Define fallbacks for CSS variables */
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --ifm-font-family-monospace: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', 'monospace';
+}
+
+/* Fallback for modern units */
+.font-size-sm {
+  font-size: 0.875rem; /* Modern */
+  font-size: 14px; /* Fallback */
+}
+
+.font-size-base {
+  font-size: 1rem; /* Modern */
+  font-size: 16px; /* Fallback */
+}
+
+.font-size-lg {
+  font-size: 1.125rem; /* Modern */
+  font-size: 18px; /* Fallback */
+}
+
+/* Fallback for modern spacing */
+.spacing-xs {
+  margin: 0.25rem; /* Modern */
+  margin: 4px; /* Fallback */
+}
+
+.spacing-sm {
+  margin: 0.5rem; /* Modern */
+  margin: 8px; /* Fallback */
+}
+
+.spacing-md {
+  margin: 1rem; /* Modern */
+  margin: 16px; /* Fallback */
+}
+
+.spacing-lg {
+  margin: 1.5rem; /* Modern */
+  margin: 24px; /* Fallback */
+}
+
+.spacing-xl {
+  margin: 2rem; /* Modern */
+  margin: 32px; /* Fallback */
+}
+
+/* Fallback for modern colors */
+.color-primary {
+  color: var(--ifm-color-primary, #2563eb); /* Modern with fallback */
+}
+
+.bg-primary {
+  background-color: var(--ifm-color-primary, #2563eb); /* Modern with fallback */
+}
+
+/* Fallback for modern border-radius */
+.rounded {
+  border-radius: var(--ifm-global-radius, 4px); /* Modern with fallback */
+}
+
+/* Fallback for modern shadows */
+.shadow {
+  box-shadow: var(--ifm-global-shadow, 0 1px 2px rgba(0, 0, 0, 0.1)); /* Modern with fallback */
+}
+
+/* Fallback for modern transitions */
+.transition {
+  transition: all var(--ifm-transition-fast, 0.2s ease); /* Modern with fallback */
+}
+
+/* Fallback for modern transforms */
+.transform-hover {
+  transition: transform 0.2s ease;
+}
+
+.transform-hover:hover {
+  transform: var(--ifm-transform-translate-y-negative-2, translateY(-2px)); /* Modern */
+  -webkit-transform: translateY(-2px); /* Fallback */
+  -moz-transform: translateY(-2px); /* Fallback */
+  -ms-transform: translateY(-2px); /* Fallback */
+  -o-transform: translateY(-2px); /* Fallback */
+}
+
+/* Fallback for modern gradients */
+.gradient-bg {
+  background: var(--ifm-color-primary, #2563eb); /* Fallback */
+  background: linear-gradient(135deg, var(--ifm-color-primary, #2563eb) 0%, var(--ifm-color-primary-darker, #1e40af) 100%); /* Modern */
+}
+
+/* Fallback for modern text styles */
+.text-ellipsis {
+  white-space: nowrap; /* Fallback */
+  overflow: hidden; /* Fallback */
+  text-overflow: ellipsis; /* Modern */
+}
+
+/* Fallback for modern image styles */
+.img-fluid {
+  max-width: 100%; /* Modern */
+  height: auto; /* Modern */
+  width: auto\9; /* IE8 fallback */
+}
+
+/* Fallback for modern display properties */
+.d-flex {
+  display: -webkit-box; /* Fallback */
+  display: -webkit-flex; /* Fallback */
+  display: -ms-flexbox; /* Fallback */
+  display: flex; /* Modern */
+}
+
+.d-none {
+  display: none; /* Modern */
+}
+
+@media (max-width: 768px) {
+  .d-sm-none {
+    display: none; /* Modern */
+  }
+}
+
+/* Fallback for modern positioning */
+.position-relative {
+  position: relative; /* Modern */
+}
+
+.position-absolute {
+  position: absolute; /* Modern */
+}
+
+/* Fallback for modern z-index */
+.z-index-1 {
+  z-index: 1; /* Modern */
+}
+
+.z-index-2 {
+  z-index: 2; /* Modern */
+}
+
+/* Fallback for modern cursor */
+.cursor-pointer {
+  cursor: pointer; /* Modern */
+}
+
+/* Fallback for modern pointer events */
+.pointer-events-none {
+  pointer-events: none; /* Modern */
+}
+
+/* Fallback for modern user select */
+.user-select-none {
+  -webkit-user-select: none; /* Fallback */
+  -moz-user-select: none; /* Fallback */
+  -ms-user-select: none; /* Fallback */
+  user-select: none; /* Modern */
+}
+
+/* Fallback for modern appearance */
+.input-unstyled {
+  -webkit-appearance: none; /* Fallback */
+  -moz-appearance: none; /* Fallback */
+  appearance: none; /* Modern */
+  border: none;
+  outline: none;
+}
+
+/* Fallback for modern box sizing */
+.box-sizing-border {
+  -webkit-box-sizing: border-box; /* Fallback */
+  -moz-box-sizing: border-box; /* Fallback */
+  box-sizing: border-box; /* Modern */
+}
+
+/* Fallback for modern transitions */
+.transition-all {
+  -webkit-transition: all 0.2s ease; /* Fallback */
+  -moz-transition: all 0.2s ease; /* Fallback */
+  -o-transition: all 0.2s ease; /* Fallback */
+  transition: all 0.2s ease; /* Modern */
+}
+
+/* Fallback for modern transforms */
+.translate-y-neg-2 {
+  -webkit-transform: translateY(-2px); /* Fallback */
+  -moz-transform: translateY(-2px); /* Fallback */
+  -ms-transform: translateY(-2px); /* Fallback */
+  -o-transform: translateY(-2px); /* Fallback */
+  transform: translateY(-2px); /* Modern */
+}
+
+/* Fallback for modern opacity */
+.opacity-50 {
+  opacity: 0.5; /* Modern */
+  filter: alpha(opacity=50); /* IE8 fallback */
+}
+
+/* Fallback for modern text wrapping */
+.text-wrap {
+  white-space: normal; /* Modern */
+  word-wrap: break-word; /* Fallback */
+  word-break: break-word; /* Fallback */
+}

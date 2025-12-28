@@ -4,7 +4,7 @@ import os
 import aiohttp
 from typing import List, Optional
 from ..models.retrieval import RetrievedContent
-from ..models.query import Query
+from ..models.query import QueryRequest as Query
 
 
 class RetrievalClient:

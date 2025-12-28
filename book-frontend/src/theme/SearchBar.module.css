@@ -1,0 +1,122 @@
+/* SearchBar.module.css */
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.25rem 0.5rem;
+  background-color: var(--ifm-navbar-search-input-background-color, var(--ifm-color-emphasis-100));
+  transition: all var(--ifm-transition-fast) ease;
+  min-width: 200px;
+}
+
+.searchFormExpanded {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  min-width: 300px;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--ifm-font-color-base);
+}
+
+.searchButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.searchButton:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.searchSuggestions {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow);
+  z-index: 1000;
+  margin-top: 0.25rem;
+}
+
+.searchSuggestionsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.searchSuggestionsTitle {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+.searchCloseButton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--ifm-color-emphasis-600);
+  padding: 0.25rem;
+  border-radius: var(--ifm-global-radius);
+}
+
+.searchCloseButton:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.searchSuggestionsList {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.searchSuggestionItem {
+  margin: 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-100);
+}
+
+.searchSuggestionItem:last-child {
+  border-bottom: none;
+}
+
+.searchSuggestionLink {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  transition: background-color var(--ifm-transition-fast) ease;
+}
+
+.searchSuggestionLink:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
