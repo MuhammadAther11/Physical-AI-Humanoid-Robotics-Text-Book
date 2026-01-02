@@ -1,5 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
+# Apply httpx compatibility patch before any other imports
+# This must be done before importing openai to fix the 'proxies' argument issue
+try:
+    from src.httpx_patch import apply_patch
+    apply_patch()
+except ImportError:
+    pass
+
 from src.config import Config
 
 # Set up logging configuration

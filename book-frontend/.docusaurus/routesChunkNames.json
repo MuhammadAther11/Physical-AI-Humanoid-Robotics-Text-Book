@@ -242,10 +242,17 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomed-9-f-ffb"
   },
+  "/chatbot-50c": {
+    "__comp": "__comp---site-src-pages-chatbot-tsx-30-a-0c5",
+    "__context": {
+      "plugin": "plugin---chatbota-74-26c"
+    },
+    "config": "config---chatbot-5-e-9-77b"
+  },
   "/markdown-page-3d7": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
+      "plugin": "plugin---chatbota-74-26c"
     },
     "content": "content---markdown-page-393-028"
   },
@@ -317,8 +324,8 @@
   "/-e5f": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
+      "plugin": "plugin---chatbota-74-26c"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "config---chatbot-5-e-9-77b"
   }
 }
