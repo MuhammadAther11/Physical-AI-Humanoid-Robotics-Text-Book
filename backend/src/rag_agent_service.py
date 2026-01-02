@@ -157,37 +157,78 @@ class RAGAgentService:
     def _retrieve_context(self, query_text: str) -> Optional[List[Dict[str, str]]]:
         """
         Retrieve relevant context from the Qdrant vector database.
-        
+
         Args:
             query_text: The text to search for in the vector database
-            
+
         Returns:
             List of context documents or None if retrieval fails
         """
         try:
-            # This is a simplified implementation
-            # In a real implementation, you would:
-            # 1. Convert the query_text to an embedding
-            # 2. Search the Qdrant database for similar vectors
-            # 3. Return the relevant documents
-            
-            # For now, returning a mock context
-            # In a real implementation, you would use the qdrant_service
-            # to perform the actual vector search
             logger.info(f"Retrieving context for query: {query_text[:50]}...")
-            
-            # Placeholder implementation - in a real system, this would
-            # perform actual vector search in Qdrant
-            return [
-                {
-                    "title": "Humanoid Robotics Documentation",
-                    "url": "https://example.com/humanoid-robotics",
-                    "content": "Information about humanoid robots and their control systems..."
-                }
-            ]
-            
+
+            # Check if Qdrant service has search capability
+            if not hasattr(self.qdrant_service, 'client') or self.qdrant_service.client is None:
+                logger.warning("Qdrant client not available")
+                return None
+
+            # Get collection info to check if it exists
+            try:
+                self.qdrant_service.client.get_collection('rag_embeddings')
+            except Exception as e:
+                logger.warning(f"Collection 'rag_embeddings' not found: {e}")
+                return None
+
+            # Fetch all points from the collection (since we don't have embedding service)
+            # In a production system, you would use vector search with embeddings
+            scroll_result = self.qdrant_service.client.scroll(
+                collection_name='rag_embeddings',
+                limit=10
+            )
+
+            records = scroll_result[0] if scroll_result else []
+
+            if not records:
+                logger.warning("No documents found in Qdrant")
+                return None
+
+            # Filter and format the context from payload
+            context = []
+            for record in records:
+                payload = record.payload
+                text = payload.get('text', '')
+                url = payload.get('url', '')
+                title = payload.get('title', 'Textbook Content')
+
+                # Simple text-based relevance filtering (keyword matching)
+                query_lower = query_text.lower()
+                text_lower = text.lower()
+
+                # Check if query keywords appear in the document
+                query_words = [w for w in query_lower.split() if len(w) > 3]
+                matches = sum(1 for word in query_words if word in text_lower)
+
+                # Include if there are meaningful matches
+                if matches >= 1 or len(query_words) == 0:
+                    # Truncate very long text
+                    content = text[:2000] + '...' if len(text) > 2000 else text
+
+                    context.append({
+                        "title": title,
+                        "url": url,
+                        "content": content,
+                        "relevance_score": matches
+                    })
+
+            # Sort by relevance score and return top results
+            context.sort(key=lambda x: x.get('relevance_score', 0), reverse=True)
+            context = context[:5]  # Return top 5 results
+
+            logger.info(f"Retrieved {len(context)} relevant documents from Qdrant")
+            return context if context else None
+
         except Exception as e:
-            logger.error(f"Error retrieving context: {str(e)}")
+            logger.error(f"Error retrieving context from Qdrant: {str(e)}")
             return None
     
     def _format_sources(self, context: List[Dict[str, str]]) -> List[Source]:

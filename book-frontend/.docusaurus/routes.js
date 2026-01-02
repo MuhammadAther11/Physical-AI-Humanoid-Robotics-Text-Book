@@ -108,6 +108,11 @@ export default [
     exact: true
   },
   {
+    path: '/chatbot',
+    component: ComponentCreator('/chatbot', '50c'),
+    exact: true
+  },
+  {
     path: '/markdown-page',
     component: ComponentCreator('/markdown-page', '3d7'),
     exact: true

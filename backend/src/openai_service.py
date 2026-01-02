@@ -11,7 +11,12 @@ class OpenAIService:
 
     def __init__(self):
         """Initialize the OpenAI client with configuration from environment."""
-        openai.api_key = Config.OPENAI_API_KEY
+        # Use OpenRouter API key if available, otherwise fall back to OpenAI key
+        api_key = Config.OPENROUTER_API_KEY or Config.OPENAI_API_KEY
+        self.client = openai.OpenAI(
+            api_key=api_key,
+            base_url=Config.OPENROUTER_BASE_URL
+        )
         self.model = Config.RAG_AGENT_MODEL
         self.temperature = Config.RAG_AGENT_TEMPERATURE
 
@@ -45,7 +50,7 @@ class OpenAIService:
             })
 
             # Call the OpenAI API
-            response = openai.chat.completions.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
                 temperature=self.temperature,
@@ -104,7 +109,7 @@ class OpenAIService:
         """
         try:
             # Make a simple test call
-            response = openai.chat.completions.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[{"role": "user", "content": "Hello"}],
                 max_tokens=5,
