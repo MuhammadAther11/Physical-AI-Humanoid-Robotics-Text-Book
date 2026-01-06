@@ -1,0 +1,73 @@
+openapi: 3.0.0
+info:
+  title: RAG Chatbot Query API
+  description: API for querying the RAG chatbot system
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+
+paths:
+  /query:
+    post:
+      summary: Submit a query to the RAG chatbot
+      description: Processes a user question and returns a contextual answer using RAG
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - question
+              properties:
+                question:
+                  type: string
+                  description: The user's question
+                  example: "What are the key components of a humanoid robot?"
+      responses:
+        '200':
+          description: Successful response with answer
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - answer
+                properties:
+                  answer:
+                    type: string
+                    description: The answer to the user's question
+                    example: "The key components of a humanoid robot include actuators, sensors, control systems, and a power source..."
+        '400':
+          description: Bad request - invalid input
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - error
+                properties:
+                  error:
+                    type: string
+                    description: Error message explaining the issue
+                    example: "Question field is required"
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - error
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+                    example: "An internal error occurred while processing the query"
+      tags:
+        - chatbot
+
+tags:
+  - name: chatbot
+    description: RAG chatbot functionality

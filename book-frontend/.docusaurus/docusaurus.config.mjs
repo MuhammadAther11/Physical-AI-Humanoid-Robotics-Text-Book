@@ -157,7 +157,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 AI-Native Textbook & Interactive Platform. Built with Docusaurus."
+      "copyright": "Copyright © 2026 AI-Native Textbook & Interactive Platform. Built with Docusaurus."
     },
     "prism": {
       "theme": {

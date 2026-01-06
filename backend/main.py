@@ -5,6 +5,7 @@ Handles the flow: Query → retrieve → agent → response
 import os
 import logging
 from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List
 import cohere
@@ -17,6 +18,9 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 import time
 import hashlib
+
+# Import the new API router
+from backend.src.api.query_endpoint import router as query_router
 
 
 # Load environment variables
@@ -47,6 +51,15 @@ app = FastAPI(
     title="RAG Agent API",
     description="API for RAG agent that provides context-grounded answers based on textbook content",
     version="1.0.0"
+)
+
+# Add CORS middleware to allow Docusaurus frontend access
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # In production, replace with specific frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
@@ -503,6 +516,9 @@ async def process_query(request: QueryRequest):
     return response
 
 
+# Include the query router
+app.include_router(query_router, prefix="", tags=["query"])
+
 @app.get("/health")
 async def health_check():
     """
@@ -516,7 +532,7 @@ async def health_check():
     except Exception as e:
         logger.error(f"Cohere client health check failed: {e}")
         cohere_ok = False
-    
+
     # Check if Qdrant client is accessible
     qdrant_ok = True
     try:
@@ -525,9 +541,9 @@ async def health_check():
     except Exception as e:
         logger.error(f"Qdrant client health check failed: {e}")
         qdrant_ok = False
-    
+
     status = "healthy" if cohere_ok and qdrant_ok else "unhealthy"
-    
+
     return {
         "status": status,
         "checks": {
